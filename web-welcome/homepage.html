@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RedVault</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/fav.ico">
+    <link rel="icon" type="image/x-icon" href="images/fav.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1 class="main-title">
+        Добро пожаловать в RedVault – облачный браузер с установленными
+        CA-сертификатами Минцифры РФ
+      </h1>
+    </header>
+    <main class="main-container">
+      <h1 class="main-content-title visually-hidden">Подбор программы для вашего кота</h1>
+      <section class="main-section section-about">
+        <h2 class="sub-title">Важная информация</h2>
+        <p class="main-text">
+          Вы используете браузер с сертификатами безопасности, выпущенными
+          Российской Федерацией, его не следует использовать для повседневного
+          использования с “обычными сайтами”. Это может быть небезопасным из-за
+          возможности совершения
+          <a
+            href="https://ru.wikipedia.org/wiki/Атака_посредника/"
+            class="main-link"
+            >MITM атаки</a
+          >. Подробнее об этом можно прочитать
+          <a
+            href="https://telegra.ph/CHem-opasny-rossijskie-brauzery-i-ustanovlennye-v-nih-kornevye-sertifikaty-Vozmozhna-li-proslushka-02-10/"
+            class="main-link"
+            >здесь</a
+          >. Тем не менее, вы можете безопасно заходить на сайты, которые
+          требуют государственный сертификат, не устанавливая сертификаты на
+          основное устройство.
+        </p>
+      </section>
+      <section class="main-section section-tech">
+        <h2 class="sub-title">Техническое решение</h2>
+        <p class="main-text">
+          RedVault работает внутри Docker-контейнера с установленными
+          CA-сертификаты. При запуске можно выбрать настройки окружения,
+          например разрешение экрана. На данный момент поддерживается только
+          браузер Chromium, при его запуске автоматически открывается эта
+          страница. Чтобы проверить, что всё работает правильно, перейдите на
+          страницу
+          <a href="https://sberbank.com/ru/certificates/" class="main-link"
+            >sberbank.com/ru/certificates/</a
+          >. Более подробную информацию можно найти на
+          <a href="https://github.com/sigseg5/" class="main-link"
+            >странице проекта</a
+          >.
+        </p>
+      </section>
+      <section class="main-section security">
+        <h2 class="sub-title">Безопасность</h2>
+        <p class="main-text">
+          После установки и запуска контейнера рекомендуется озаботиться о
+          безопасности соединения и установить
+          <a href="https://letsencrypt.org/" class="main-link">SSL-сертификат</a
+          >. Это позволит защитить соединение и снизить риски утечки
+          конфиденциальных данных. Шифрование трафика через HTTPS гарантирует,
+          что данные будут передаваться в зашифрованном виде и не будут доступны
+          третьим лицам. Поэтому, если вы заботитесь о безопасности, следует
+          принять эту рекомендацию во внимание.
+        </p>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="organizer-list">
+        <li class="organizer-item">
+          <a
+            href="https://roskomsvoboda.org/"
+            class="organizer-link hidden-link"
+            target="_blank"
+            style="width: 120px; height: 55px"
+          >
+            РосКомСвобода
+            <img
+              src="images/RKS.svg"
+              class="organizer-icon"
+              alt="RosKomSvoboda logo"
+              width="120px"
+            >
+          </a>
+        </li>
+        <li class="organizer-item">
+          <a
+            href="https://privacyaccelerator.org/"
+            class="organizer-link hidden-link"
+            target="_blank"
+          >
+            Privacy Accelerator
+            <img
+              src="images/Privacy_Accelerator.svg"
+              class="organizer-icon PA-icon"
+              alt="Privacy Accelerator Logo"
+              width="100px"
+            >
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
