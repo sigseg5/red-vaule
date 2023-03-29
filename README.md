@@ -9,6 +9,17 @@ You need to create a cloud browser with RU CA that can be deployed in Russia. Th
 
 ## Usage
 
+- [Install](https://docs.docker.com/engine/install) Docker
+
+- Rent machine in target country
+
+- Run this command from the project folde:
+
+      docker build . -t demhack && \
+      docker run -d -p 5901:5901 -p 6901:6901 -e VNC_PW=pass -e VNC_RESOLUTION=1440x794 demhack
+
+See below for more information
+
 - Print out help page:
 
       docker run demhack --help
