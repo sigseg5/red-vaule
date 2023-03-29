@@ -1,4 +1,4 @@
-# Docker container images with "RedVault" for demhack 6 hackathon
+# Docker container with cloud browser in which Russian Trusted CA certificates are installed
 
 This repository contains a demhack 6 MVP tech project.
 
